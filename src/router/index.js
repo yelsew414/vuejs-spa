@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BarchartView from '../views/BarchartView.vue'
 import LinechartView from '../views/LinechartView.vue'
+import InteractiveBarchartView from '../views/InteractiveBarchartView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,7 +29,12 @@ const router = createRouter({
       path: '/linechart',
       name: 'linechart',
       component: () => import('../views/LinechartView.vue')
-    }
+    },
+    {
+      path: '/interactivebar',
+      name: 'interactivebar',
+      component: () => import('../views/InteractiveBarchartView.vue')
+    },
   ]
 })
 
