@@ -14,6 +14,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/barchart">Barchart</RouterLink>
+        <RouterLink to="/linechart">Linechart</RouterLink>
       </nav>
     </div>
   </header>
