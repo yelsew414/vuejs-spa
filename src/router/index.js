@@ -35,6 +35,11 @@ const router = createRouter({
       name: 'interactivebar',
       component: () => import('../views/InteractiveBarchartView.vue')
     },
+    {
+      path: '/animatedbar',
+      name: 'animatedbar',
+      component: () => import('../views/AnimatedBarchartView.vue')
+    }
   ]
 })
 

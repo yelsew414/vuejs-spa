@@ -16,6 +16,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
         <RouterLink to="/barchart">Barchart</RouterLink>
         <RouterLink to="/linechart">Linechart</RouterLink>
         <RouterLink to="/interactivebar">Interactive Barchart</RouterLink>
+        <RouterLink to="/animatedbar">Animated Barchart</RouterLink>
       </nav>
     </div>
   </header>
