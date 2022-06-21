@@ -35,12 +35,11 @@ export default {
   <header>
       <!-- <HelloWorld msg="You did it!" /> -->
 
-      {{activator}}
 
-    <nav class="navbar is-transparent">
+    <nav class="navbar is-info">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        <a class="navbar-item is-size-3" href="https://bulma.io">
+          D3 Demos by Wes
         </a>
         <div ref="burger" class="navbar-burger" data-target="navbarExampleTransparentExample" @click="makeBurger" v-bind:class="{ 'is-active': activator }" >
           <span></span>
@@ -54,7 +53,7 @@ export default {
           <a class="navbar-item" href="https://bulma.io/">
             Home
           </a>
-          <div class="navbar-item has-dropdown is-hoverable" ref="dropdown" @click="makeBurger" v-bind:class="{ 'is-active': activator }">
+          <div class="navbar-item has-dropdown is-hoverable" ref="dropdown" v-bind:class="{ 'is-active': activator }">
             <a class="navbar-link">
               Charts
             </a>
@@ -70,9 +69,10 @@ export default {
     </nav>
 
   </header>
-  <div class="mt-3">
+  <div class="mt-3" style="margin: auto;">
       <RouterView />
   </div>
+  {{activator}}
 </template>
 
 <style>
@@ -87,3 +87,8 @@ export default {
     }
 }
 </style>
+
+<!-- todo: make a separate listener for burger and the dropdown!
+both cannot rely on the same variable for the custom functionality that you want my friend
+each of these situations requires closing a different element. 
+-->
