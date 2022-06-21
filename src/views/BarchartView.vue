@@ -82,8 +82,8 @@
 </template>
 
 <style>
-svg {
-    width: 700px;
-    height: 500px;
+svg#barchart {
+    display: block;
+    margin: auto;
 }
 </style>

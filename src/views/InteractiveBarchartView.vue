@@ -98,18 +98,16 @@
 </script>
 
 <template>
-    <div>
-        <svg id="interactiveBar"></svg>
-          <div class="slidecontainer">
-              <input type="range" min="0" max="100" value="0" class="slider" id="barRange">
-          </div>
+    <svg id="interactiveBar"></svg>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="0" class="slider" id="barRange">
     </div>
 </template>
 
 <style>
-svg {
-    width: 700px;
-    height: 500px;
+svg#interactiveBar {
+    display: block;
+    margin: auto;
 }
 .slidecontainer {
     text-align: center;
