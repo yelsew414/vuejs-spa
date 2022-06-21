@@ -109,9 +109,9 @@
 </template>
 
 <style>
-svg {
-    width: 700px;
-    height: 500px;
+svg#linechart {
+    display: block;
+    margin: auto;
 }
 .slidecontainer {
     text-align: center;

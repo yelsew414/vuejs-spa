@@ -50,7 +50,7 @@ export default {
 
       <div id="navbarExampleTransparentExample" class="navbar-menu" v-bind:class="{ 'is-active': activator }">
         <div class="navbar-start">
-          <a class="navbar-item" href="https://bulma.io/">
+          <a class="navbar-item" href="/">
             Home
           </a>
           <div class="navbar-item has-dropdown is-hoverable" ref="dropdown" v-bind:class="{ 'is-active': activator }">
@@ -69,10 +69,9 @@ export default {
     </nav>
 
   </header>
-  <div class="mt-3" style="margin: auto;">
+    <div class="mt-5 container is-centered is-max-desktop">
       <RouterView />
-  </div>
-  {{activator}}
+    </div>
 </template>
 
 <style>
