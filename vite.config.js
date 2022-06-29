@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vuejs-spa',
+  base: '/vuejs-spa/',
   plugins: [vue()],
   resolve: {
     alias: {
