@@ -50,9 +50,9 @@ export default {
 
       <div id="navbarExampleTransparentExample" class="navbar-menu" v-bind:class="{ 'is-active': activator }">
         <div class="navbar-start">
-          <a class="navbar-item" href="/">
-            Home
-          </a>
+          <div class="navbar-item">
+            <RouterLink style="text-decoration: none; color: inherit;" to="/home">Home</RouterLink>
+          </div>
           <div class="navbar-item has-dropdown is-hoverable" ref="dropdown" v-bind:class="{ 'is-active': activator }">
             <a class="navbar-link">
               Charts
